@@ -1,8 +1,5 @@
 import React, { PropTypes } from 'react';
 
-
-// Move to components/Counter.js
-// ----------------------------------------------------------
 const Counter = props => {
   return (
     <div className="counter" >
@@ -18,8 +15,8 @@ const Counter = props => {
 }
 
 Counter.propTypes = {
-  onChange: React.PropTypes.func.isRequired,
-  score: React.PropTypes.number.isRequired,
+  onChange: PropTypes.func.isRequired,
+  score: PropTypes.number.isRequired,
 };
 
 export default Counter;
